@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*header start*/
+        body{
+            padding:0;
+           margin:0;
+            box-sizing:border-box;
+            background-color: azure;
+        }
+        header{
+            width:100%;background-color:rgba(0, 0, 0, 0.673);color:white;display:flex;
+        }
+        .logo{
+            font-family: Arial, Helvetica, sans-serif;font-size:50px;color:red;
+            font-weight: bold;margin-left:20px;
+            padding-top:5px;display:inline-block;margin-top:10px;transition:1s all ease-in-out
+        }
+        .logo:hover{color:greenyellow; font-family:cursive ; font-size:65px
+
+        }
+        .navbar{
+            justify-content: center;align-items: center;display:relative;
+        }
+        .navbar ul{
+            list-style:none;
+        }
+        .navbar ul li{
+            background-color:#272323;width:170px;
+            border:2px solid #fff;
+            text-align:left; float:left;
+            color:white;font-size:16px;text-transform: uppercase;font-weight:bold;
+            position:relative;justify-content: center;text-align: center;height: 50px;line-height:50px;transition:1s ;margin-left:50px
+        } 
+        
+        .navbar ul li a{
+            text-decoration:none;
+            color:white;
+            justify-content:center;text-align: center;align-items:center;
+            
+        }
+        .navbar ul li:hover{
+            background-color:crimson
+        }
+        .navbar ul li ul{
+            display:none
+        }
+        .navbar ul li:hover>ul{
+            display:block
+        }
+        
+        /*header close*/
+        /*footer start*/  
+        footer{
+            
+            
+            position:absolute;
+            bottom:0;align-items: center;
+            justify-content:center;text-align:center;
+            background-color:rgba(0, 0, 0, 0.611);
+            width:100%;color:white;line-height: 20px;
+        
+        }
+       .h2 h2{
+         font-weight:bold;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size:30px
+        }
+        .text p{
+            width:600px;
+            margin:0px auto;text-align:center;position:relative;bottom:15px
+        }
+        .icon i{
+            font-size:15px;position:relative;bottom:10px;padding:10px;
+        }
+        .copy{
+            height:30px;
+            width:100%;text-align:center;
+            background-color:black;margin:auto;position:relative;line-height:50px;font-size: 10px;
+        }/*footer ends*/
+       /*Form starts*/
+       .form1{
+       background-color:red;
+        ;color:white;margin:auto;
+        text-align:center ;font-size:40px;width:210px; height:260px;padding:30px 80px;border-radius:5px;margin-top:10px; box-shadow: 5px 5px 5px rgba(17, 47, 241, 0.907);
+     transition: all ease-in-out 2s;margin-left:auto
+    }
+     .form1 input{
+    padding-top:5px;padding-left: 20px;padding-right:30px;
+    border-color:yellowgreen; width:75%; ;
+     transition:all 1s ease-in-out; align-items: center; border-radius: 5px; border-color: rgb(138, 30, 210); }
+    .ab{
+        font-weight:bold; font-size:15px
+    }
+    .form1:hover{width:250px; height:270px;background-color: orangered; }
+    .form1 input:focus{
+        width:85%
+    }
+    input.ab:hover{
+        background-color:blue
+    }
+    /*mobile view*/
+    @media (max-width:650px){header{
+        width:146%} .navbar ul li{width:184px;margin-left:5px;height:29px;font-size:13px;line-height:36px;}element.style{ font-size:10px}.logo{font-size:33px;padding-top:0px;margin-top:1px;}.form1{font-size:36px;width:183px;height:230px;padding:27px 69px; margin-left:140px } footer{width:146%;bottom:330px;line-height:16px;}.copy{line-height:21px; font-size:9px}.h2.h2{
+            font-size:24px;
+        }
+    }
+    </style>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>  
+    <title>Paaddiii </title>
+</head>
+<body>
+    <!--Header part start-->
+    <header>
+        <div class="logo">Raadi paadi <p style="font-size:10px ;color:#fff; line-height:1px">(Pls click the logo)</p>
+            
+        </div>
+       <div class="navbar"> <ul>
+            <li><a href="index(radii).html">Home</a></li>
+            <li><a href="#">Raadi Pictutess</a></li>
+            <li><a href="#">Raadi accounts</a>
+            <ul>
+                <li><a href="#">Phabbok</a> </li>
+                <li><a href="#">dtt</a>  </li>
+                <li><a href="#"> </a> </li>
+            </ul>
+            </li>
+            <li><p style="margin:auto"><a href="#">About me</a></li></p>
+        </ul>
+           
+        </div>
+    </header>
+    <!--Header Close-->
+
+
+
+<!--Form Start-->
+<div class="form1">
+<form action="#">
+<label for="email">User Name:</label><br>
+<input type="text" name="username" placeholder="Type your name Paadii" id="input" required><br>
+<label for="Password">Password:</label>
+<input type="text" id="input" name="password" required placeholder="Type password:: raadipaadi">
+<br>
+
+<input type="reset" value="Reset" class="ab">
+<a href="index2.html"><input type="submit" value="Login" class="ab"></a></form>
+
+
+
+</div>
+
+
+<!--Form ends-->
+
+
+
+
+   <!--Footer part start-->
+    <footer>
+        <div class="h2"><h2>Omar Faruk</h2></div>
+           <div class="text">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nisi?
+        </p>
+        <p><b> No one but Raadi every day : Yaaaahhh, eito laaf mere uthe gesii tomar(coco) mathaiiii !!:):)</b></p>
+           </div> 
+        <div class="icon">
+           <a> <i class="fi fi-brands-facebook"></i></a>
+           <a href="#"> <i class="fi fi-brands-twitter"></i></a> 
+            <i class="fi fi-brands-linkedin"></i>
+            <i class="fi fi-brands-youtube"></i>
+        
+        </div>
+        <div class="copy">Copyright @2022 by Omar</div>
+    </footer>
+    <!--Footer part end-->
+
+
+    
+</body>
+</html>
+
