@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+     body{
+            padding:0;
+           margin:0;
+            box-sizing:border-box;
+            background-color: rgb(0, 0, 0);
+        }
+        header{
+            width:100%;background-color:rgba(84, 75, 75, 0.673);color:white;display:flex;
+        }
+        .logo{
+            font-family: Arial, Helvetica, sans-serif;font-size:50px;color:rgb(25, 23, 23);
+            font-weight: bold;margin-left:20px;
+            padding-top:5px;display:inline-block;margin-top:10px;transition:1s all ease-in-out;text-shadow:5px 5px 5px red;font-weight:bold
+        }
+        .logo:hover{color:greenyellow; font-family:cursive ; font-size:65px
+
+        }
+        .navbar{
+            justify-content: center;align-items: center;display:relative;
+        }
+        .navbar ul{
+            list-style:none;
+        }
+        .navbar ul li{
+            background-color:#272323;width:170px;
+            border:2px solid #fff;
+            text-align:left; float:left;
+            color:white;font-size:16px;text-transform: uppercase;font-weight:bold;
+            position:relative;justify-content: center;text-align: center;height: 50px;line-height:50px;transition:1s ;margin-left:50px
+        } 
+        
+        .navbar ul li a{
+            text-decoration:none;
+            color:white;
+            justify-content:center;text-align: center;align-items:center;
+            
+        }
+        .navbar ul li:hover{
+            background-color:crimson
+        }
+        .navbar ul li ul{
+            display:none
+        }
+        .navbar ul li:hover>ul{
+            display:block
+        }
+    .box{
+        height:300px;
+        width:400px;
+        background:transparent;border:10px solid black;
+        margin:auto; margin-top:100px;padding:10px;position:relative;
+        animation-name: square;
+        animation-duration: 35s;
+        animation-timing-function: linear;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction:alternate;
+        animation-fill-mode: backwards;
+        animation-play-state: running;
+        align-items: center;justify-content:center;
+        display:flex;box-shadow: 5px 5px 15px red;
+    }
+    
+.pic{
+    width:500px
+}
+    
+.circle{
+width:150px;height:200px ;text-align: center;border:5px solid tomato;
+background-color:antiquewhite;margin-left:50px;animation: box running infinite 5s 4s forwards alternate}
+
+.letter{ background-color:rgba(60, 60, 66, 0.844);margin-top: 50px; width:183px;margin-left: 300px;height:140px;align-items: center;justify-content: center;position: relative;border:1em rgb(236, 59, 5) solid;box-shadow: 5px 5px 15px rgb(0, 162, 255);
+}
+.letterpic{
+    width:160px;height: 120px;margin-left: 10px;margin-top: 11px;
+}
+    @keyframes square{
+        0%{
+        left:0; right:0;border-color:crimson;
+        }
+        25%{background-color:cyan;
+        left:200px; right:0;border-color:aquamarine}
+        50%{background-color:orange;
+        left:0; right:500px;border-radius:50%; border-color:red}
+        75%{
+            background-color:red;
+            right:500px;
+            left:0
+        }
+        100% {background-color:blue;
+            right:500px ;
+            left:0;
+            border-radius:0px;text-shadow: 5px 5px 5px red;border-color:blueviolet;transform:scale(1.4) rotate(); animation-delay: 2s;color:red
+        }
+        
+        
+    }
+    @keyframes box{
+        0%{
+            border-color:crimson;
+            left:0;
+            right:0;transform:scale(1); background-color: antiquewhite;
+        }
+        25%{
+            border-color:aquamarine; border-radius:50%;transform:scale(1.1)
+        ;background-color:red}
+        50%{border-color:red;border-radius:50%;
+transform:scale(1.2) rotate(360deg);background-color: rgb(212, 255, 0);background-color: blanchedalmond;
+        }
+        75%{border-color:black;transform:scale(1.0) ;
+border-radius:65%; background-color: whitesmoke;
+        }
+        100%{
+            border-color:blueviolet;transform:scale(1.1);transform:rotate(360deg);border-radius:80%;background-color: white;
+        }
+        
+
+    }
+    .cat{
+        width:138px;height:100px; animation:cat infinite 35s 4s backwards ;background-color:aquamarine ; overflow:scroll
+    ;margin-left: 0px;border:3px solid black; box-shadow: 5px 5px 4px rgb(79, 79, 233);transition: all 1.5s ease-in-out;border-radius:5px}
+    .cat:hover{
+        width:170px; height:150px
+    }
+    .cat p{
+        margin-left:5px ;text-align:center; font-size:13px; text-shadow: 5px 5px 5px rgb(255, 86, 2);padding-left: 10px;width:fit content; height:fit-content
+    }
+    @keyframes cat{
+        0%{transform:rotate();font-weight:bold}
+        25%{color:black;display: none}
+        50%{transform:rotate(360deg);font-weight: bold;font-size:15px}
+        75%{transform:rotate()}
+        100%{transform:rotate();font-weight:bold;}
+    }
+
+
+    /* mobile view strts */@media(max-width:700px){
+        header{
+        width:154%;height:209px} .navbar ul li{width:174px;margin-left:6px;height:29px;font-size:17px;line-height:34px;}element.style{ font-size:10px}.logo{font-size:55px;padding-top:20px;margin-top:15px;}
+        .letter{margin-left:269px; margin-top: 233px;}
+    }
+</style>
+    <title>Document</title>
+</head>
+<body style="overflow:scroll">
+    <header>
+        <div class="logo">Raadi Paadii<p style="font-size:10px ;color:#fff; line-height:1px">(Pls click the logo)</p>
+            
+        </div>
+       <div class="navbar"> <ul>
+            <li><a href="index(radii).html">Home</a></li>
+            <li><a href="#">Raadi Pictutess</a></li>
+            <li><a href="#">Raadi accounts</a>
+            <ul>
+                <li><a href="#">Phabbok</a> </li>
+                <li><a href="#">dtt</a>  </li>
+                <li><a href="#"> </a> </li>
+            </ul>
+            </li>
+            <li><a href="index(about).html">About</a></li>
+        </ul>
+                 
+    
+        </div>
+        
+    </header>
+
+    <audio autoplay preload="auto" loop="true">
+        <source src="Happy Birthday Ringtone _ Free Ringtones Download.mp3" type="audio/mp3">     </audio>
+   <div class="box">
+<div class="cat"><p>Happy Birthday Raadii.I just wish that u would stay happy your whole life🥺🥺🥺🥺🥰🥰🥰🥰👶🏻👶🏻👶🏻👶🏻👶🏻luv u infinite my queen....... </p></div>
+<div class="circle"> <img src="birthday.gif" alt="" style="width:100px; margin-top:50px" class="pic"></div>
+
+   </div>
+<div class="letter"><a href="index(letter).html"><img src="letter.jpg" alt="" class="letterpic"></a>
+
+</div>
+<marquee behavior="" direction="rtl" style="color:#fff; font-size:50px;font-weight: bolder; color:coral">Picchi letter(pic ta click denn🥺🥺🥺🥺🥰🥰🥰🥰</marquee>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+  body{
+            padding:0;
+           margin:0;
+            box-sizing:border-box;
+            background-color: rgb(0, 0, 0);
+            font-family: sans-serif;
+        }
+        header{
+            width:100%;background-color:rgba(84, 75, 75, 0.673);color:white;display:flex;
+        }
+        .logo{
+            font-family: Arial, Helvetica, sans-serif;font-size:50px;color:rgb(25, 23, 23);
+            font-weight: bold;margin-left:20px;
+            padding-top:5px;display:inline-block;margin-top:10px;transition:1s all ease-in-out;text-shadow:5px 5px 5px red;font-weight:bold
+        }
+        .logo:hover{color:greenyellow; font-family:cursive ; font-size:65px
+
+        }
+        .navbar{
+            justify-content: center;align-items: center;display:relative;
+        }
+        .navbar ul{
+            list-style:none;
+        }
+        .navbar ul li{
+            background-color:#272323;width:170px;
+            border:2px solid #fff;
+            text-align:left; float:left;
+            color:white;font-size:16px;text-transform: uppercase;font-weight:bold;
+            position:relative;justify-content: center;text-align: center;height: 50px;line-height:50px;transition:1s ;margin-left:50px
+        } 
+        
+        .navbar ul li a{
+            text-decoration:none;
+            color:white;
+            justify-content:center;text-align: center;align-items:center;
+            
+        }
+        .navbar ul li:hover{
+            background-color:crimson
+        }
+        .navbar ul li ul{
+            display:none
+        }
+        .navbar ul li:hover>ul{
+            display:block
+        }
+ 
+ 
+ .container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin:40px 20px 0 20px
+ }
+ .container .heading{
+width:50%;
+padding-bottom: 50px;
+}
+.container .heading h3{
+    font-size:3em;
+    font-weight:bolder;
+    border-bottom:3px solid #222;
+    padding-bottom: 10px
+    
+}
+.container .heading h3 span{
+font-weight:100
+    
+}
+.container .box{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;}
+   
+.container .box .dream{
+    display:flex;
+    flex-direction: column;
+    width:32.5%;
+}
+.container .box .dream img{
+    width:100%; padding-bottom: 15px;
+    border-radius:5px
+}
+.container .btn{
+    margin:40px 0 70px 0;
+    background-color:#222;
+    border-radius:5px;
+    padding:15px 40px
+}
+.container .btn a{
+    text-decoration: none;font-weight: bolder;
+    color:rgb(17, 16, 16);
+    letter-spacing: 2px;
+}
+.audio{
+    width:300px
+}
+
+/* mobile view strts */@media (max-width:700px){
+    header{
+        width:109%;height:209px} .navbar ul li{width:174px;margin-left:6px;height:29px;font-size:17px;line-height:34px;}element.style{ font-size:10px}.logo{font-size:55px;padding-top:20px;margin-top:15px;}}
+@media (max-width:769px){
+    .container .box{
+        flex-direction: column;
+    }
+    .container .box .dream{
+width:100%
+    }
+}
+@media  (max-width:643px){
+    .container .heading{
+width:100%;
+
+}
+.container .heading h3{
+    font-size:1em;
+   
+}}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Raadi Paadii<p style="font-size:10px ;color:#fff; line-height:1px">(Pls click the logo)</p>
+            
+        </div>
+       <div class="navbar"> <ul>
+            <li><a href="index(radii).html">Home</a></li>
+            <li><a href="#">Raadi Pictutess</a></li>
+            <li><a href="#">Raadi accounts</a>
+            <ul>
+                <li><a href="#">Phabbok</a> </li>
+                <li><a href="#">dtt</a>  </li>
+                <li><a href="#"> </a> </li>
+            </ul>
+            </li>
+            <li><a href="index(about).html">About</a></li>
+        </ul>
+        
+        </div>
+        
+    </header>
+    
+    <div class="container">
+      <audio controls autoplay unmuted src="Playdate.mp3"></audio>
+        <div class="heading">
+            <h3 style="color:white">Photo <span>
+        Gallery</span></h3>
+        </div>
+<div class="box">
+
+    <div class="dream">
+        <img src="img1.jpg" alt="">
+        <img src="img2.jpg" alt=""><img src="img3.jpg" alt=""><img src="img4.jpg" alt=""><img src="img5.jpg" alt=""><img src="img6.jpg" alt="">
+    </div>
+    <div class="dream">
+        <img src="img7.jpg" alt="">
+        <img src="img8.jpg" alt=""><img src="img9.jpg" alt=""><img src="img10.jpg" alt=""><img src="img11.jpg" alt=""><img src="img12.jpg" alt="">
+    </div>
+    <div class="dream">
+        <img src="img13.jpg" alt="">
+        <img src="img14.jpg" alt=""><img src="img15.jpg" alt=""><img src="img16.jpg" alt=""><img src="img17.jpg" alt=""><img src="img18.jpg" alt="">
+    </div>
+
+</div>
+<div class="btn">
+    <a href="#">More</a>
+</div>
+
+
+
+    </div>
+</body>
+</html>
